@@ -1,0 +1,14 @@
+body {text-align: center; background:#F2E1EE; padding:100}
+.ki{background:#2D185E; color:#DEF2B5; border: outset; padding:4; margin: -5 20 30 180 }
+.li{background:#5E1827; color:#DEF2B5; border: outset;padding:4 9; margin:-5 }
+.i1 {margin:3 2 3 70}
+.i2 {margin:3 0 3 0}
+.i3 {margin:3 0 3 0}
+.i4 {margin:3 90 3 95}
+.i5{margin:3 0 3 0}
+.i6 {margin:3 100 3 0}
+.i7{margin:3 100 3 0}
+.a1:link {text-decoration: none; margin:740}
+.a1:visited { color:#641414 }
+.a1:active { color:#641414}
+.a1:hover { text-decoration: underline; }

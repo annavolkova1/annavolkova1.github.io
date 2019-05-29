@@ -1,0 +1,35 @@
+body {text-align: center; background:#F2E1EE; padding:120px
+}
+.table {
+list-style: none;
+width: 10 px; 
+padding: 0 10
+}
+.table li{
+margin:20;
+font-family: Trebuchet MS sans-serif;
+font-size: 18px;
+text-align: center;
+}
+.table li a {
+display: block;
+padding: 10px 2px;
+margin:auto;
+background: #949AF1;
+color: #392C2C;
+text-decoration: none;
+position: relative;
+width:350px;
+border: thick outset #949AF1;
+}
+.table li a:hover{
+opacity:0.7
+}
+.a1:link {text-decoration: none; margin:2 120 1 160 
+}
+.a1:visited { color:#641414 
+}
+.a1:active { color:#641414
+}
+.a1:hover { text-decoration: underline; 
+}

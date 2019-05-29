@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Волкова Анна: Bootstrap за два часа!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+	<!-- Подключение Яндекс Карт-->
+    <script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+
+	<style>
+	#body_button {
+background-color : #3E5ACC;
+border: 1px solid black;
+border-radius: 5px;
+color : #FFFFFF;
+height : 40px;
+width : 170px;
+}
+
+#body_button:hover {
+background-color : #627BDD;
+border: 1px solid white;
+box-shadow: 0 0 10px rgba(0,0,0,0.5);
+width : 190px;
+height : 45px;
+}
+
+#map {
+height : 300px;	
+}
+
+h1 {
+text-align : center;
+background-color : #3E5ACC;
+color : #FFFFFF;	
+border : 1px solid black;
+border-radius : 10px;
+box-shadow: 0 0 10px rgba(0,0,0,0.8);
+padding : 5px;
+}
+
+h2 {
+text-align : center;
+}
+
+.container {
+margin: 0 auto;	
+}
+
+	</style>
+</head>
+<body>
+<div class="container">
+<div class="col-xs-12 col-sm-12 col-xs-12 col-lg-12">
+<h1>Bootstrap за два часа!</h1>
+<h2>Мы не обманем вас - мы обведём вас вокруг пальца...</h2>
+<h3>Карта</h3>
+<p>Наш адрес: Россия, Санкт-Петербург, набережная реки Мойки, д.48.</p>
+</div>
+
+<div id="map" class="col-xs-12 col-sm-12 col-md-6 col-lg-8"></div>
+
+<div class="main-content col-xs-12 col-sm-12 col-md-6 col-lg-4">
+<img src="https://7531.ru/podvig/trening/assets/img/1/1-7.png" alt="">
+<h4>Экспресс-курс Bootstrap</h4>
+<p>Если вы достаточно сильны духом, то кликните на кнопку "Шагнуть в западню" и...</p>
+<p>Добро пожаловать в АД!</p>
+<button id="body_button" data-toggle="modal" data-target="#mini-modal-window">Шагнуть в западню</button>
+</div>
+
+<div id="mini-modal-window" hidden class="modal fade ">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Вы сможете покинуть это коварное окно?</h4>
+      </div>
+      <div class="modal-body">
+	    <p>Введите число больше 10, если хотите выбратьcя...</p>
+        <p><input id="inp_id"></input></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Подтвердить</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<script>
+window.addEventListener("load",start);
+
+function start(){
+  var map = new ymaps.Map ("map", {
+            center: [59.93238958246285,30.318888624551278], 
+            zoom: 16
+        });	
+		
+myPlacemark = new ymaps.Placemark([59.93238958246285,30.318888624551278], { 
+              content: 'Our audience', 
+			  balloonContent: 'Big brother watching you!'
+		});
+		
+map.geoObjects.add(myPlacemark);
+
+$(".btn-primary").click(function(){
+var tmp = $("#inp_id").val();
+if (+tmp > 10){
+  $('#mini-modal-window').modal('toggle');  
+}
+});
+}
+</script>
+</body>
+</html>

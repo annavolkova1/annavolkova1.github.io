@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration</title><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1.0, user-scalable=no">   
+    <link href="css/style1.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+	integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+	</script>
+  </head>
+  <body>
+    <div class="container-flued"> 
+	 <div class="w-row">
+		<div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
+		</div>
+		<div class="w-clearfix w-col w-col-4 w-col-small-4 w-col-tiny-4">
+			<h3 class="header">
+				Регистрация соискателей
+			</h3>
+		</div>
+		<div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
+		</div>
+	</div>
+	<div class="w-row">
+		<div class="-col w-col-4 w-col-small-small-stack w-col-tiny-tiny-stack">
+		</div>
+		<div class="w-col w-col-4 w-col-small-small-stack w-col-tiny-tiny-stack">
+			<form action="mail.php" method="post" role="form">
+			  <input type="text" name="name" placeholder="Имя" autofocus><br />
+              <input type="text" name="surname" placeholder="Фамилия"><br />
+              <div class="f"><fieldset>
+              <legend style="color:#E9E4BD; font-size:16px" align="left">Пол </legend>		  
+		      <select>
+		       <option value="1">Женский</option>
+               <option value="2">Мужской</option>
+		      </select> 
+		      </fieldset>
+			  </div></br>
+			   <div class="f"><fieldset>
+              <legend style="color:#E9E4BD; font-size:16px" align="left">Дата рождения </legend>		  
+		      <select class="day">
+		       <option value="1">День</option>
+               <option value="2">1</option>
+			   <option value="3">2</option>
+               <option value="4">3</option>
+			   <option value="5">4</option>
+               <option value="6">5</option>
+			   <option value="7">6</option>
+               <option value="8">7</option>
+			   <option value="9">8</option>
+               <option value="10">9</option>
+			   <option value="11">10</option>
+               <option value="12">11</option>
+			   <option value="13">12</option>
+               <option value="14">13</option>
+			   <option value="15">14</option>
+               <option value="16">15</option>
+			   <option value="17">16</option>
+               <option value="18">17</option>
+			   <option value="19">18</option>
+               <option value="20">19</option>
+			   <option value="21">20</option>
+               <option value="22">21</option>
+			   <option value="23">22</option>
+               <option value="24">23</option>
+			   <option value="25">24</option>
+               <option value="26">25</option>
+			   <option value="27">26</option>
+               <option value="28">27</option>
+			   <option value="29">28</option>
+               <option value="30">29</option>
+			   <option value="31">30</option>
+			   <option value="32">31</option>
+               </select>
+               <select class="month">
+		       <option value="1">Месяц</option>
+               <option value="2">Январь</option>
+			   <option value="3">Февраль</option>
+               <option value="4">Март</option>
+			   <option value="5">Апрель</option>
+               <option value="6">Май</option>
+			   <option value="7">Июнь</option>
+               <option value="8">Июль</option>
+			   <option value="9">Август</option>
+               <option value="10">Сентябрь</option>
+			   <option value="11">Октябрь</option>
+               <option value="12">Ноябрь</option>
+			   <option value="13">Декабрь</option>
+		      </select>		
+              <select class="year">
+		       <option value="1">Год</option>
+               <option value="2">1998</option>
+			   <option value="3">1997</option>
+               <option value="4">1996</option>
+			   <option value="5">1995</option>
+               <option value="6">1994</option>
+			   <option value="7">1993</option>
+               <option value="8">1992</option>
+			   <option value="9">1991</option>
+               <option value="10">1990</option>
+			   <option value="11">1989</option>
+               <option value="12">1988</option>
+			   <option value="13">1987</option>
+               <option value="14">1986</option>
+			   <option value="15">1985</option>
+               <option value="16">1984</option>
+			   <option value="17">1983</option>
+               <option value="18">1982</option>
+			   <option value="19">1981</option>
+               <option value="20">1980</option>
+			   <option value="21">1979</option>
+               <option value="22">1978</option>
+			   <option value="23">1977</option>
+               <option value="24">1976</option>
+			   <option value="25">1975</option>
+               <option value="26">1974</option>
+			   <option value="27">1973</option>
+               <option value="28">1972</option>
+			   <option value="29">1971</option>
+               <option value="30">1970</option>
+			   <option value="31">1969</option>
+			   <option value="32">1968</option>
+		      </select>			  
+		      </fieldset>
+			  </div></br>
+	          <input type="text" name="teleph" placeholder="Номер телефона"><br />
+			  <input type="email" name="email" placeholder="Email"><br />
+              <input type="password" name="password" id="pass" placeholder="Пароль"><br />
+              <div class="check"><label><input type="checkbox" id="passShow"><span>Показать пароль</span></label></div><br />
+              <script src="js/script.js"></script>
+              <input type="submit" name="check_in" value="Зарегистрироваться"><br />
+              <a href="account.html" target="_self"><input type="button" name="person_ar" value="Войти в личный кабинет"></a><br />	 
+			</form>
+		</div>
+		<div class="w-col w-col-4 w-col-small-small-stack w-col-tiny-tiny-stack">
+		</div>
+	</div>
+</div>
+</body>
+</html>
